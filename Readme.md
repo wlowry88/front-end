@@ -11,7 +11,9 @@ A few notes before you begin:
 * You can use whatever plugins/frameworks you'd like, but try not to use something that completely solves the problem. Remember, we want to get a sense for what your skills are, and copying/pasting a chunk of plugin code into the repo isn't always going to showcase your JavaScript skills as well as it could.
 * Feel free to Google for stuff as needed.
 
-You're going to be asked to recreate form within a modal dialog box. The steps and directions to do so are listed on the accompanying image files step1.png and step2.png. At the very minimum, your code should:
+You're going to be asked to recreate form within a modal dialog box. The steps and directions to do so are listed on the accompanying image files step1.png, step2.png and two_fieldsets.png. Note that in step 2, the modal only contains one field -- this is an error. The modal should display all the managers' information currently on the page and as many fields as necessary to edit their information.
+
+At the very minimum, your code should:
 
 1. Ensure a modal window opens up when the "Edit" link is clicked
 2. Close the modal windown when the cancel or "X" button is clicked
@@ -22,4 +24,4 @@ The image files you need for the project are inside the accompanying image direc
 
 Good luck and happy front-ending!
 
--- SumZero 
+-- SumZero
