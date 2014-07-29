@@ -11,7 +11,9 @@ A few notes before you begin:
 * You can use whatever plugins/frameworks you'd like, but try not to use something that completely solves the problem. Remember, we want to get a sense for what your skills are, and copying/pasting a chunk of plugin code into the repo isn't always going to showcase your JavaScript skills as well as it could.
 * Feel free to Google for stuff as needed.
 
-You're going to be asked to recreate form within a modal dialog box. The steps and directions to do so are listed on the accompanying image files step1.png, step2.png and two_fieldsets.png. Note that in step 2, the modal only contains one field -- this is an error. The modal should display all the managers' information currently on the page and as many fields as necessary to edit their information.
+You're going to be asked to recreate form within a modal dialog box. The steps and directions to do so are listed on the accompanying image files step1.png, step2.png and two_fieldsets.png. 
+
+Note that the image for step 2 contains an error -- the image only shows one set of fields for editing a single manager and that is not correct. The modal should display all the managers' information currently on the page and as many fields as necessary to edit their information. So for example, if there were 2 managers on the page and the edit button was clicked, the modal should contain two sets of input and textarea fields for editing each manager's data.
 
 At the very minimum, your code should:
 
