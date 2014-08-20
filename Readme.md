@@ -7,13 +7,14 @@ Welcome to the evaluation. The purpose of this short test is to give us a better
 
 A few notes before you begin:
 
-* It's strongly recommended you use jQuery for this project. You don't have to of course, but it sure makes things easier, since you'll be manipulating the DOM quite a bit. A copy of the latest jQuery is included with the repo.
+* It's strongly recommended you use jQuery for this project. You don't have to of course, but it sure makes things easier, since you'll be manipulating the DOM quite a bit. A copy of the latest jQuery is included with the repo and is linked to in the html file.
 * You can use whatever plugins/frameworks you'd like, but try not to use something that completely solves the problem. Remember, we want to get a sense for what your skills are, and copying/pasting a chunk of plugin code into the repo isn't always going to showcase your JavaScript skills as well as it could.
+* If you prefer Coffeescript to JavaScript, go for it.
 * Feel free to Google for stuff as needed.
 
-You're going to be asked to recreate form within a modal dialog box. The steps and directions to do so are listed on the accompanying image files step1.png, step2.png and two_fieldsets.png. 
+You need to create a form within a modal dialog box. The steps and directions to do so are listed on the accompanying image files step1.png, step2.png and two_fieldsets.png. 
 
-Note that the image for step 2 contains an error -- the image only shows one set of fields for editing a single manager and that is not correct. The modal should display all the managers' information currently on the page and as many fields as necessary to edit their information. So for example, if there were 2 managers on the page and the edit button was clicked, the modal should contain two sets of input and textarea fields for editing each manager's data.
+Note that the image for step 2 contains an error -- the image only shows one set of fields for editing a single manager and that is not correct. The modal should display all the managers' information currently on the page and as many fields as necessary to edit their information. So for example, if there were 2 managers on the page and the edit button was clicked, the modal should contain two sets of input and textarea fields for editing each manager's data. This is also true for the two_fieldsets.png image -- both managers' information should be present in the box when it is displayed.
 
 At the very minimum, your code should:
 
