@@ -35,4 +35,8 @@ $(function(){
 	    $overlay.hide();
 		});
 
+		$("#modal").on("click", ".plus-button", function () {
+			$(".one-dude").clone();
+		})
+
 });
