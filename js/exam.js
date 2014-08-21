@@ -2,7 +2,7 @@
 
 
 
-$(document).ready(function(){
+$(function(){
 		var
     $overlay,
     $modal,
@@ -10,31 +10,29 @@ $(document).ready(function(){
     $open,
     $close;
 
-		$overlay = $('<div id="overlay"></div>');
-		$modal = $('<div id="modal"></div>');
-		$content = $('<div id="content"></div>');
-		$close = $('<a id="close" href="#">close</a>');
+		$overlay = $("#overlay");
+		$open = $("#edit-button")
+		$modal = $("#modal");
+		$close = $("#x-button");
 
 		$modal.hide();
 		$overlay.hide();
-		$modal.append($content, $close);
+
 
 		
 		// $('body').append($overlay, $modal);
 	
 
 
-    $("container").on("click", $open, function() {
-	    $content.empty().append(settings.content);
-	    $modal.show();
-	    $overlay.show();
+    $("header").on("click", "#edit-button", function() {
+	    $("#overlay").show();
+	    $("#modal").show();
 		});
 
     // Close the modal
-    $("container").on("click", $close, function () {
+    $("header").on("click", "#x-button", function () {
 	    $modal.hide();
 	    $overlay.hide();
-	    $content.empty();
 		});
 
 });

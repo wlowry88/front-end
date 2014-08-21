@@ -193,11 +193,11 @@ a {
 }
 
 .cancel:hover {
-	background-color: #ccc;
+	background-color: #eee;
 }
 
 .right-side {
-	margin-left: 120px;
+
 }
 
 .plus {
@@ -215,8 +215,4 @@ a {
     float: left;
     margin-right: 0px;
     margin-left: 120px;
-}
-
-div.edit {
-	padding-bottom: 20px;
 }

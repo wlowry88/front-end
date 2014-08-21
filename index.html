@@ -8,6 +8,8 @@
 	  <link rel="stylesheet" href="images/icons/color/icons.css" />
 	  <link rel="stylesheet" href="images/icons/monochrome/font/style.css" />
 	  <link rel="stylesheet" href="css/exam.css" />
+		<script src="js/lib/jquery.js"></script>
+	  <script src="js/exam.js"></script>
 	</head>
 
 	<body class="exam-page">
@@ -55,32 +57,33 @@
 			  <header>
 			    <h1 class="page-title">
 			      Edit Executive Management
-    				<img id= "x-button" class="edit-or-x" src="images/icons/monochrome/png/close.png">
+    				<img id= "x-button" class="edit-or-x" src="images/icons/monochrome/png/close.png"/>
 			    </h1>
 			  </header>
 
 			  <section class="people">
 			    <div class = "single-manager-div clearfix edit">
-		        <h2>
-		          Manager Information: 
-		        </h2>
-						<form>
-						  <p>
-						    <label for="name">Name<span style="color: #FF0000;">*</span></label>
-						    <input id="name" ... required />
-						  </p>
-						  <p>
-						    <label for="bio">Bio<span style="color: #FF0000;">*</span></label>
-						    <input id="bio" type= "text" cols="20" rows="10"/>
-						  </p>
-						</form>
-			    </div>
-			    <div class="modal-extras">
-			      <a class = "right-side" href=""><div class="minus"></div>Remove Manager</a><br>
-			      <a class = "right-side" href=""><div class="plus"></div>Add Another Manager</a><br>
+		        <div>
+			        <h2>
+			          Manager Information: 
+			        </h2>
+							<form>
+							  <p>
+							    <label for="name">Name<span style="color: #FF0000;">*</span></label>
+							    <input id="name" ... required />
+							  </p>
+							  <p>
+							    <label for="bio">Bio<span style="color: #FF0000;">*</span></label>
+							    <input id="bio" type= "text" cols="20" rows="10"/>
+							  </p>
+							</form>
 			      </div>
+			      <div class="modal-extras">
+			      	<a class = "right-side" href=""><div class="minus"></div>Remove Manager</a><br>
+			      	<a class = "right-side" href=""><div class="plus"></div>Add Another Manager</a><br>
 			      <button class="submit-button" value="Submit">UPDATE</button>
 			      <button class="cancel submit-button" value="Submit">CANCEL</button>
+			      </div>
 		      </div>
 			  </section>
 			</div>
@@ -88,8 +91,6 @@
 
 		<!-- Feel free to add/remove/rearrange any <script> or <head>-item tags as well if the mood strikes you -->
 
-		<script src="js/lib/jquery.js"></script>
-	  <script src="js/exam.js"></script>
 	</body>
 
 
