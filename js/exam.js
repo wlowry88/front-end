@@ -16,14 +16,20 @@ $(function(){
 		$close = $("#x-button");
 		$minusButton	= $(".minus-button");
 
-		$modal.hide();
-		$overlay.hide();
+		function hideAll() {
+			$modal.hide();
+			$overlay.hide();	
+		}
+
+		hideAll();
 		$(".minus-button").hide();
 
 
 		function managerName(){
+			var managers = []
 			$.each($(".single-manager-info > h2"), function( index, value ) {
-				alert($(value).text().trim());
+				managers.push($(value).text().trim());
+				alert(managers)
 			});
 		}
 
@@ -50,6 +56,10 @@ $(function(){
 			$(".one-dude").clone().appendTo(".one-dude");
 			$minusButton.show()
 		})
+
+		$("#modal").on("click", ".cancel", function(){
+			hideAll();
+		});
 
 
 
