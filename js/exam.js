@@ -38,9 +38,19 @@ $(function(){
 			$.each($(".single-manager-info > p"), function( index, value ) {
 				bios.push($(value).text().trim());
 			});
-			return bios
+			return bios;
 		}
 
+		function addIds() {
+			$.each($(".people .single-manager-div"), function ( index, value ) {
+				$(value).attr('id', index);
+				console.log($(value).attr("id"));
+			});
+		}
+
+		addIds();
+
+		// test
 		console.log(managerNames());
 		console.log(managerBios());
 		function addFields() {
@@ -51,8 +61,8 @@ $(function(){
 
 
     $("header").on("click", "#edit-button", function() {
-	    $("#overlay").show();
-	    $("#modal").show();
+	    $overlay.show();
+	    $modal.show();
 		});
 
     // Close the modal
