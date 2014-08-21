@@ -14,9 +14,11 @@ $(function(){
 		$open = $("#edit-button")
 		$modal = $("#modal");
 		$close = $("#x-button");
+		$minusButton	= $(".minus-button");
 
 		$modal.hide();
 		$overlay.hide();
+		$(".minus-button").hide();
 
 
 		
@@ -36,7 +38,10 @@ $(function(){
 		});
 
 		$("#modal").on("click", ".plus-button", function () {
-			$(".one-dude").clone();
+			$(".one-dude").clone().appendTo(".one-dude");
+			$minusButton.show()
 		})
+
+
 
 });
