@@ -51,10 +51,11 @@ $(function(){
 		addIds();
 
 		// test
-		console.log(managerNames());
-		console.log(managerBios());
 		function addFields() {
-
+			$.each($(".people .single-manager-div"), function (index, value ) {
+				$(".one-dude").find("#name").val(managerNames()[index]);
+				$(".one-dude").find("#bio").val(managerBios()[index]);
+			});
 		}
 		// $('body').append($overlay, $modal);
 	
@@ -63,6 +64,7 @@ $(function(){
     $("header").on("click", "#edit-button", function() {
 	    $overlay.show();
 	    $modal.show();
+	    addFields();
 		});
 
     // Close the modal
