@@ -21,7 +21,16 @@ $(function(){
 		$(".minus-button").hide();
 
 
-		
+		function managerName(){
+			$.each($(".single-manager-info > h2"), function( index, value ) {
+				alert($(value).text().trim());
+			});
+		}
+
+		console.log(managerName());
+		function addFields() {
+
+		}
 		// $('body').append($overlay, $modal);
 	
 
