@@ -25,15 +25,24 @@ $(function(){
 		$(".minus-button").hide();
 
 
-		function managerName(){
+		function managerNames(){
 			var managers = []
 			$.each($(".single-manager-info > h2"), function( index, value ) {
 				managers.push($(value).text().trim());
-				alert(managers)
 			});
+			return managers
 		}
 
-		console.log(managerName());
+		function managerBios(){
+			var bios = []
+			$.each($(".single-manager-info > p"), function( index, value ) {
+				bios.push($(value).text().trim());
+			});
+			return bios
+		}
+
+		console.log(managerNames());
+		console.log(managerBios());
 		function addFields() {
 
 		}
