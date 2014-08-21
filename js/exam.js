@@ -52,10 +52,11 @@ $(function(){
 
 		// test
 		function addFields() {
-			$.each($(".people .single-manager-div"), function (index, value ) {
-				$(".one-dude").find("#name").val(managerNames()[index]);
-				$(".one-dude").find("#bio").val(managerBios()[index]);
-			});
+				$(".one-dude").clone().appendTo(".dudes-group");
+			for(i=0; i< $(".people .single-manager-div").length; i++) { 
+				$($(".one-dude")[i]).find("#name").val(managerNames()[i]);
+				$($(".one-dude")[i]).find("#bio").val(managerBios()[i]);
+			};
 		}
 		// $('body').append($overlay, $modal);
 	
