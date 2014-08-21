@@ -18,6 +18,11 @@ p {
 	font-size: 13px;
 }
 
+span {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
 .single-manager-div {
 	display: block;
 
@@ -113,7 +118,7 @@ p {
 	margin-bottom: 0px;
 }
 
-.x-button {
+.edit-or-x {
 	float: right;
 	padding-right: 10px;
 	padding-top: 15px;

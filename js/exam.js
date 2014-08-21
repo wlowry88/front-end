@@ -26,12 +26,6 @@ $(document).ready(function(){
 
     $("container").on("click", $open, function() {
 	    $content.empty().append(settings.content);
-
-	    // $modal.css({
-	    //     width: settings.width || 'auto', 
-	    //     height: settings.height || 'auto'
-	    // })
-
 	    $modal.show();
 	    $overlay.show();
 		});
