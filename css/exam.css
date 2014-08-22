@@ -35,6 +35,17 @@ label {
   left: 0;
   top: Xpx /* x to align nicely with the baseline of the text in the input */
 }
+textarea {
+	border: 1px solid #888;
+	vertical-align: top;
+	padding-left: 5px;
+  margin-left: 120px;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));
+  color: #767676;
+  height: 20px;
+  box-shadow: none;
+}
+
 input {
 	border: 1px solid #888;
 	vertical-align: top;
