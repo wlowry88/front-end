@@ -201,18 +201,24 @@ a:hover {
 }
 
 .plus {
-    width: 20px;
-    height: 20px;
-    background: url("../images/icons/color/icon-sprites.png") -40px -40px;
-    float: left;
-    margin-right: 0px;
-    margin-left: 120px;
+  width: 20px;
+  height: 20px;
+  background: url("../images/icons/color/icon-sprites.png") -40px -40px;
+  float: left;
+  margin-right: 0px;
+  margin-left: 120px;
 }
 .minus {
-    width: 20px;
-    height: 20px;
-    background: url("../images/icons/color/icon-sprites.png") -40px -60px;
-    float: left;
-    margin-right: 0px;
-    margin-left: 120px;
+  width: 20px;
+  height: 20px;
+  background: url("../images/icons/color/icon-sprites.png") -40px -60px;
+  float: left;
+  margin-right: 0px;
+  margin-left: 120px;
+}
+
+.countdown {
+	font-style: italic;
+	color: gray;
+	margin-left: 120px;
 }

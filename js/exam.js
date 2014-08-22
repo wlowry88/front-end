@@ -34,11 +34,15 @@ $(function(){
 		}
 
 		function updateCountdown() {
-		    var remaining = 500 - $('.message').val().length;
-		    $('.countdown').text(remaining + ' characters remaining.');
+			$.each($('.countdown'), function ( index, value ) {
+		    var remaining = 500 - $($('.message')[index]).val().length;
+		    $(value).text(remaining + ' characters remaining.');
+			});
 		}
 
-
+    $("body").on("keyup", ".message", function(){
+   		updateCountdown();
+   	});
 
 		function namesChanges(){
 			var managers = []
@@ -80,9 +84,7 @@ $(function(){
 				$(".dudes-group").append($new_person);
 				$($(".one-dude")[i]).find("#name").val(managerNames()[i]);
 				$($(".one-dude")[i]).find("#bio").val(managerBios()[i]);
-			updateCountdown();
-    	$('.message').change(updateCountdown);
-    	$('.message').keyup(updateCountdown);
+
 			};
 		}
 		function updateFields() {
@@ -99,6 +101,7 @@ $(function(){
 	    $overlay.show();
 	    $modal.show();
 	    addFields();
+	    updateCountdown();
 		});
 
 		$(".submit-button").on("click", function(){
