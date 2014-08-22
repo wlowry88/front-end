@@ -11,7 +11,7 @@ $(function(){
 		$modal = $("#modal");
 		$close = $("#x-button");
 		$minusButton	= $(".minus-button");
-		var $new_person = "<div class = \"one-dude\"><h2>Manager Information: </h2><form><p><label for=\"name\">Name<span style=\"color: #FF0000;\">*</span></label><input id=\"name\"/></p><p>			    <label for=\"bio\">Bio<span style=\"color: #FF0000;\">*</span></label>  <input id=\"bio\" type=\"textarea\"/></p></form></div>"
+		var $new_person = "<div class = \"one-dude\"><h2>Manager Information: </h2><form><p><label for=\"name\">Name<span style=\"color: #FF0000;\">*</span></label><input id=\"name\"/></p><p>			    <label for=\"bio\">Bio<span style=\"color: #FF0000;\">*</span></label>  <input id=\"bio\" class=\"message\" rows=\"2\" cols=\"30\" type=\"textarea\"/></p></form><span class=\"countdown\"></span></div>"
 
 		var $regular_person = "<div class = \"single-manager-div clearfix\"><div class = \"single-manager-image\"><img src=\"images/executive-default-image.png\"></div><div class= \"single-manager-info\"><h2></h2><p></p></div></div>"
 
@@ -19,6 +19,8 @@ $(function(){
 			$modal.hide();
 			$overlay.hide();	
 		}
+
+
 
 		hideAll();
 		$(".minus-button").hide();
@@ -30,6 +32,13 @@ $(function(){
 			});
 			return managers
 		}
+
+		function updateCountdown() {
+		    var remaining = 500 - $('.message').val().length;
+		    $('.countdown').text(remaining + ' characters remaining.');
+		}
+
+
 
 		function namesChanges(){
 			var managers = []
@@ -71,6 +80,9 @@ $(function(){
 				$(".dudes-group").append($new_person);
 				$($(".one-dude")[i]).find("#name").val(managerNames()[i]);
 				$($(".one-dude")[i]).find("#bio").val(managerBios()[i]);
+			updateCountdown();
+    	$('.message').change(updateCountdown);
+    	$('.message').keyup(updateCountdown);
 			};
 		}
 		function updateFields() {
@@ -92,7 +104,7 @@ $(function(){
 		$(".submit-button").on("click", function(){
 			hideAll();
 			updateFields();
-				$(".one-dude").remove()
+			$(".one-dude").remove()
 			
 		});
 
