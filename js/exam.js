@@ -92,6 +92,7 @@ $(function(){
 		$(".submit-button").on("click", function(){
 			hideAll();
 			updateFields();
+				$(".one-dude").remove()
 			
 		});
 
