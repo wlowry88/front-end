@@ -74,10 +74,11 @@ $(function(){
 			};
 		}
 		function updateFields() {
+			$(".people div").remove()
 			for(i=0; i< $(".one-dude").length; i++) { 
-
-				$($(".people .single-manager-div")[i]).find("h2").text(namesChanges()[i]);
-				$($(".people .single-manager-div")[i]).find("p").text(biosChanges()[i]);
+				var name = namesChanges()[i];
+				var bio = biosChanges()[i];
+				$(".people").append("<div class = \"single-manager-div clearfix\"><div class = \"single-manager-image\"><img src=\"images/executive-default-image.png\"></div><div class= \"single-manager-info\"><h2>"+name+"</h2><p>"+bio+"</p></div></div>")
 			};
 		}
 		// $('body').append($overlay, $modal);
@@ -91,7 +92,7 @@ $(function(){
 		$(".submit-button").on("click", function(){
 			hideAll();
 			updateFields();
-			$(".one-dude").remove()
+			
 		});
 
     // Close the modal
